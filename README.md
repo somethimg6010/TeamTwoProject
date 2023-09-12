@@ -1,5 +1,5 @@
 # TeamTwoProject
-Abdul Baseer, Sana and Mustafa
+Abdul Baseer,Danylo Sana and Mustafa
 
 Make sure to have proper padding and margin. you can use bootstrap or regular. try to give priority to bootstrap.
 
