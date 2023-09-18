@@ -1,68 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
-*,html{
-    box-sizing: border-box;
-}
-body{
-    
-    background-color: rgb(242, 244, 245);
-}
-.box{
-    position: relative;
-    width:100%;
-    height: 600px;
-    padding:auto;
-    margin: auto;
-    overflow: hidden;
+/*COLORS*/
+.colors{
+    color: rgb(20, 33, 61);
+    color: rgb(252, 163, 17);
+    color: rgb(229, 229, 229);
+    color: rgb(7, 42, 200);
 }
 
-.box:nth-child(odd){
-    background-color: rgb(228, 242, 252);
+/*COMMON STYLES*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    background-color: rgb(229, 229, 229);
+    color: rgb(20, 33, 61);
+}
+
+.container{
+    max-width: 900px;
+    margin:0 auto;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/*HEADER STYLES*/
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: rgb(252, 163, 17);
+    color: rgb(7, 42, 200);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    background-color: rgb(7, 42, 200);
+    color: rgb(252, 163, 17);
+}
+
+.active{
+    background-color: rgb(7, 42, 200) !important;
+    color: rgb(252, 163, 17) !important;
+}
+
+
+/*MAIN STYLES*/
+.box{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.box > img{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+
+.box > p{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 35px;
+    line-height: 90px;
+    font-weight: 400;
+    background-color: rgba(20, 33, 61, 0.5);
+    color: rgb(229, 229, 229);
 }
 
 .tst-box{
-    position: relative;
-    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.video{
+    width: 45%;
     height: 400px;
     background-color: aliceblue;
-    float:left;
-    left:0;
-    right:0;
-    top:0; 
-    margin: 100px 30px; 
-    padding: 5px;
     border: 1px solid black;
+    padding: 5px;
 }
 
-.tst-box p{
+.description{
+    width: 45%;
+    height: 400px;
+    background-color: aliceblue;
+    border: 1px solid black;
     text-align: center;
+    padding: 5px;    
 }
 
-.mainVideo{
-    position:absolute;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    margin: auto;
+.row{
+    display: flex;
+    margin-bottom: 30px;
 }
 
-.v-box{
+.column{
     text-align: center;
-    /* display: inline-block; */
-    line-height: 300px;
+    margin: 10px;
 }
 
-.v-box > p{
-    position: relative;
-    color: rgb(235, 211, 174);
-    display:inline-flex;
-    line-height: 90px;
-    font-family: 'Inconsolata', monospace;
-    font-size:35px;
-    background-color:#5d56534d;
-}
+
+/*FOOTER STYLES*/
 footer{
-    position: relative;
-    width: 100%;
-    height:550px;
-    background: rgb(228, 226, 236);
+    margin-bottom: 30px;
 }
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.formStyle{
+    padding: 20px; 
+    width: 400px; 
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.map{
+    margin-left: 30px;
+}
+
+.fbutton{
+    display: inline-block;
+    color: rgb(7, 42, 200);
+    background-color: rgb(252, 163, 17);
+    text-decoration: none;
+    padding:5px 35px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.fbutton:hover{
+    color: rgb(252, 163, 17);
+    background-color: rgb(7, 42, 200);
+}
+
+.socials{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.socials a{
+    width: 48px;
+    height: 48px;
+    margin:0 15px;
+}
+
+.icon{
+    background-size: contain;
+}
+
+.youtube{
+    background-image: url(/TeamTwoProject-main/assets/social-media/youtube.svg);
+}
+
+.facebook{
+    background-image: url(/TeamTwoProject-main/assets/social-media/facebook.svg);
+}
+
+.twitter{
+    background-image: url(/TeamTwoProject-main/assets/social-media/twitter.svg);
+}
+
+.instagram{
+    background-image: url(/TeamTwoProject-main/assets/social-media/instagram.svg);
+}
+
+.linkedin{
+    background-image: url(/TeamTwoProject-main/assets/social-media/linkedin.svg);
+}
+
+.copyright{
+    text-align: center;
+
+}
+
