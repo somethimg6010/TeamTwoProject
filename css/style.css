@@ -116,7 +116,9 @@ p{
     background-color: aliceblue;
     border: 1px solid black;
     text-align: center;
-    padding: 5px;    
+    padding: 5px;
+    word-wrap: break-word;
+    overflow: hidden; 
 }
 
 .row{
